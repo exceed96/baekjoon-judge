@@ -3,8 +3,8 @@
 
 using namespace std;
 
-int arr[100001];
 int arr2[2000001];
+int arr[100001];
 
 int main(void)
 {
@@ -18,7 +18,7 @@ int main(void)
 
 	for (int i = 0; i < n; i++)
 	{
-		if (arr2[x - arr[i]] && x - arr[i] > 0)
+		if (arr2[x - arr[i]] && x - arr[i] >= 0)
 		{
 			count++;
 		}
