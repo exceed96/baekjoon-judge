@@ -1,6 +1,7 @@
+/*https://www.acmicpc.net/problem/17388/*
 #include <iostream>
-#include <vector> //º¤ÅÍ¸¦ ÀÌ¿ëÇØ¼­
-#include <algorithm> // ÃÖ¼Ò°ªÀ» Ã£¾ÆÁÖ´Â ÇÔ¼ö·Î Á¢±Ù
+#include <vector> //ë²¡í„°ë¥¼ ì´ìš©í•´ì„œ
+#include <algorithm> // ìµœì†Œê°’ì„ ì°¾ì•„ì£¼ëŠ” í•¨ìˆ˜ë¡œ ì ‘ê·¼
 
 using namespace std;
 
