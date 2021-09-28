@@ -1,4 +1,4 @@
-/*https://www.acmicpc.net/problem/17388/*
+/*https://www.acmicpc.net/problem/173888*/
 #include <iostream>
 #include <vector> //벡터를 이용해서
 #include <algorithm> // 최소값을 찾아주는 함수로 접근
