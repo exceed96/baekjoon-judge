@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int arr[26]; // ¾ËÆÄºªÀ» Ä«¿îÆ®ÇØ¼­ ÀúÀåÇÒ ¹è¿­ A~Z
+int arr[26]; // ì•ŒíŒŒë²³ì„ ì¹´ìš´íŠ¸í•´ì„œ ì €ìž¥í•  ë°°ì—´ A~Z
 
 int main(void)
 {
@@ -15,31 +15,31 @@ int main(void)
 	cin >> a;
 	for (int i = 0; i < a.length(); i++)
 	{
-		if ('a' <= a[i] && a[i] <= 'z') //¹®ÀÚ¿­ a[i]°¡ ¼Ò¹®ÀÚÀÏ¶§ Ä«¿îÆ®ÇØÁÙ Á¶°Ç 
+		if ('a' <= a[i] && a[i] <= 'z') //ë¬¸ìžì—´ a[i]ê°€ ì†Œë¬¸ìžì¼ë•Œ ì¹´ìš´íŠ¸í•´ì¤„ ì¡°ê±´ 
 		{
 			arr[a[i] - 97]++; //ex) a(ASCII = 97) - 97 = 0
 		}
-		else if ('A' <= a[i] && a[i] <= 'Z') // ¹®ÀÚ¿­ a[i]°¡ ´ë¹®ÀÚÀÏ¶§ Ä«¿îÆ®ÇØÁÙ Á¶°Ç
+		else if ('A' <= a[i] && a[i] <= 'Z') // ë¬¸ìžì—´ a[i]ê°€ ëŒ€ë¬¸ìžì¼ë•Œ ì¹´ìš´íŠ¸í•´ì¤„ ì¡°ê±´
 		{
-			arr[a[i] - 65]++; //ex) a(ASCLL = 65) - 65 = 0
+			arr[a[i] - 65]++; //ex) a(ASCII = 65) - 65 = 0
 		}
 	}
-	max = *max_element(arr, arr + 26); //Ä«¿îÆ®Áß¿¡ ÃÖ´ë°ªÀÎ°É max¿¡ ÀúÀå
+	max = *max_element(arr, arr + 26); //ì¹´ìš´íŠ¸ì¤‘ì— ìµœëŒ€ê°’ì¸ê±¸ maxì— ì €ìž¥
 
 	for (int i = 0; i < 26; i++)
 	{
-		if (max == arr[i]) //arr¹è¿­Áß¿¡ max¿Í °°À¸¸é count++;
+		if (max == arr[i]) //arrë°°ì—´ì¤‘ì— maxì™€ ê°™ìœ¼ë©´ count++;
 		{
 			index = i;
 			count++;
 		}
 	}
 
-	if (count > 1) // count°¡ 2ÀÌ»óÀÌ¸é ¸¹ÀÌ »ç¿ëµÈ ¾ËÆÄºªÀÌ ¿©·¯°³ Á¸Àç
+	if (count > 1) // countê°€ 2ì´ìƒì´ë©´ ë§Žì´ ì‚¬ìš©ëœ ì•ŒíŒŒë²³ì´ ì—¬ëŸ¬ê°œ ì¡´ìž¬
 	{
 		cout << "?" << "\n";
 	}
-	else // count°¡ 1ÀÏ°æ¿ì¿¡´Â ÀúÀåµÈ ÀÎµ¦½º¿Í 65¸¦ ´õÇÏ¿©¼­ ¹®ÀÚ·Î º¯È¯
+	else // countê°€ 1ì¼ê²½ìš°ì—ëŠ” ì €ìž¥ëœ ì¸ë±ìŠ¤ì™€ 65ë¥¼ ë”í•˜ì—¬ì„œ ë¬¸ìžë¡œ ë³€í™˜
 	{
 		cout << char(index + 65) << "\n";
 	}
