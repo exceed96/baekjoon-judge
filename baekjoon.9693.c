@@ -1,5 +1,6 @@
 #include <stdio.h>
 /*수정*/
+/*수정2*/
 int main(void)
 {
 	int i = 1;
